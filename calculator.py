@@ -38,7 +38,7 @@ def calculate():
 
     except ZeroDivisionError:
         display.delete(0, tk.END)
-        display.insert(0, "Ошибка: деление на 0")
+        display.insert(tk.END, "0")
 
     except Exception:
         display.delete(0, tk.END)
