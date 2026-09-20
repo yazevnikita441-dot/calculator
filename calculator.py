@@ -31,6 +31,9 @@ def clear_display():
 def calculate():
     try:
         expression = display.get()
+        if expression == "":
+            display.insert(tk.END,"0")
+            return
         result = eval(expression.replace("*", "+"))
 
         display.delete(0, tk.END)
