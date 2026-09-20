@@ -25,7 +25,7 @@ def add_to_display(value):
 
 
 def clear_display():
-    display.delete(0, tk.END)
+    display.insert(tk.END, "C")
 
 
 def calculate():
